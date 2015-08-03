@@ -1,0 +1,10 @@
+<article>
+    <header>
+        <h1>You are the Worst</h1>
+        <h2>{{ page.date | date: "%-d %B, %Y" }}</h2>
+    </header>
+    
+    <section>
+        {{ page.content | markdownify }}
+    </section>
+</article>

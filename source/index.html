@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article>
+    <header>
+        <h1>You are the Worst</h1>
+        <h2>Today</h2>
+    </header>
+    
+    {% for post in site.posts limit:1 %}
+    <section>
+        {{ post.content | markdownify }}
+    </section>
+    
+    <footer>
+        <p>Published on <a href="{{ post.url }}" title="{{ post.date | date: "%F" }}">{{ post.date | date: "%-d %B, %Y" }}</a>.</p>
+    </footer>
+    {% endfor %}
+</article>
