@@ -13,8 +13,8 @@ layout: null
 		<generator>Jekyll v{{ jekyll.version }}</generator>
 		{% for post in site.posts limit:10 %}
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<description>{% capture content %}{% include post.html post=post %}{% endcapture %}{{ content | xml_escape }}</description>
+				<title>{% capture post_title %}You are the Worst on {{ post.date | date: "%-d %B, %Y" }}{% endcapture %}{{ post_title | xml_escape }}</title>
+				<description>{{ post.content | xml_escape }}</description>
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ post.url | prepend: site.baseurl | prepend: site.url }}{{ "?utm_source=feed.xml&utm_medium=feed&utm_campaign=feed" | xml_escape }}</link>
 				<guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}{{ "?utm_source=feed.xml&utm_medium=feed&utm_campaign=feed" | xml_escape }}</guid>
