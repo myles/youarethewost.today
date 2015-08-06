@@ -19,6 +19,16 @@
                     {% endif %}
                 </li>
                 
+                <li>
+                    <ul>
+                        {% assign count = '0' %}
+                        {% for page_num in site.posts %}
+                        {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+                        <li><a href="{{ page_num.url }}" title="{{ page_num.date | date: "%-d %B, %Y" }}" class="{% if page_num.url == page.url %}current{% else %}active{% endif %}">{{ count }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                
                 <li class="page-next">
                     {% if page.next %}
                     <a href="{{ page.next.url }}" class="active" title="{{ page.next.date | date: "%-d %B, %Y" }}">Next</a>

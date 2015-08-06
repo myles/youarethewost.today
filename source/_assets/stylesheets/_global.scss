@@ -60,6 +60,10 @@ article {
           
           &.inactive {
             cursor: not-allowed;
+          }
+          
+          &.inactive,
+          &.current {
             background: lighten($pagination-background, 10);
             color: lighten($pagination-color, 15);
           }
