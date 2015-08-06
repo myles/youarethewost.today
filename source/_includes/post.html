@@ -1,10 +1,13 @@
-<article>
-    <header>
+<article itemscope itemtype="http://schema.org/Article">
+    <meta itemprop="author" content="Myles Braithwaite">
+    <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+    
+    <header itemprop="headline">
         <h1>You are the Worst</h1>
         <h2>{{ page.date | date: "%-d %B, %Y" }}</h2>
     </header>
     
-    <section>
+    <section itemprop="articleBody">
         {{ page.content | markdownify }}
     </section>
     
