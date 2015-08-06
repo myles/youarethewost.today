@@ -87,3 +87,52 @@ article {
     }
   }
 }
+
+.mastfoot {
+  @include padding(1em);
+  
+  color: $mastfoot-color;
+  text-align: center;
+  
+  a {
+    color: $mastfoot-color;
+    text-decoration: none;
+  }
+  
+  .iconic {
+    @include size(1.5em);
+    vertical-align: middle;
+    fill: $mastfoot-color;
+    strock: $mastfoot-color;
+    
+    .iconic-thumbs-up {
+      display: none;
+    }
+    
+    .iconic-thumbs-down {
+      display: inline;
+    }
+  }
+  
+  &:hover {
+    color: $mastfoot-color-hover;
+    
+    a {
+      color: $mastfoot-color-hover;
+      text-decoration: underline;
+    }
+    
+    .iconic {
+      fill: $mastfoot-color-hover;
+      strock: $mastfoot-color-hover;
+      
+      .iconic-thumbs-up {
+        display: inline;
+      }
+    
+      .iconic-thumbs-down {
+        display: none;
+      }
+    }
+  }
+}
