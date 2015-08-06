@@ -1,7 +1,9 @@
+$action-color: #477dca;
+
 /////////////////////////////
 // Neat
 /////////////////////////////
-$gutter: 0px;
+$gutter: 0;
 
 // Neat Breakpoints
 $medium-screen: em(640);
@@ -14,7 +16,7 @@ $large-screen-up: new-breakpoint(min-width $large-screen 8);
 // Pagination
 /////////////////////////////
 
-$pagination-border-color: gainsboro !default;
+$pagination-border-color: #dcdcdc;
 $pagination-border: 1px solid $pagination-border-color;
 $pagination-background: lighten($pagination-border-color, 10);
 $pagination-hover-background: lighten($pagination-background, 5);

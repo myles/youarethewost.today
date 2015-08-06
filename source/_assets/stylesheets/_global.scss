@@ -1,6 +1,8 @@
+// scss-lint:disable SelectorDepth, NestingDepth, EmptyRule
+
 html {
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -33,54 +35,54 @@ article {
         li {
           display: inline;
           list-style: none;
+          
+          a {
+            @include transition (all .2s ease-in-out);
+            
+            border: $pagination-border;
+            border-radius: 3px;
+            outline: none;
+            padding: (1.5em / 4) (1.5em / 2);
+            text-decoration: none;
+            
+            &.inactive {
+              cursor: not-allowed;
+            }
+            
+            &.inactive,
+            &.current {
+              background: lighten($pagination-background, 10);
+              color: lighten($pagination-color, 15);
+            }
+            
+            &.active {
+              background: $pagination-background;
+              color: $pagination-color;
+            
+              &:hover,
+              &:focus {
+                background: $pagination-hover-background;
+                color: $action-color;
+              }
+            
+              &:active {
+                background: $pagination-background;
+              }
+            }
+          }
         }
         
         ul li {
           display: none;
           
+          @include media($large-screen) {
+            display: inline;
+          }
+          
           &:nth-child(1),
           &:nth-child(2),
           &:nth-child(3) {
             display: inline;
-          }
-          
-          @include media($large-screen) {
-            display: inline;
-          }
-        }
-        
-        li a {
-          @include transition (all 0.2s ease-in-out);
-          
-          border-radius: 3px;
-          border: $pagination-border;
-          outline: none;
-          padding: (1.5em / 4) (1.5em / 2);
-          text-decoration: none;
-          
-          &.inactive {
-            cursor: not-allowed;
-          }
-          
-          &.inactive,
-          &.current {
-            background: lighten($pagination-background, 10);
-            color: lighten($pagination-color, 15);
-          }
-          
-          &.active {
-            color: $pagination-color;
-            background: $pagination-background;
-            
-            &:hover,
-            &:focus {
-              background: $pagination-hover-background;
-              color: #477dca;
-            }
-          
-            &:active {
-              background: $pagination-background;
-            }
           }
         }
       }
@@ -101,9 +103,10 @@ article {
   
   .iconic {
     @include size(1.5em);
-    vertical-align: middle;
+    
     fill: $mastfoot-color;
-    strock: $mastfoot-color;
+    stroke: $mastfoot-color;
+    vertical-align: middle;
     
     .iconic-thumbs-up {
       display: none;
@@ -123,8 +126,8 @@ article {
     }
     
     .iconic {
-      fill: $mastfoot-color-hover;
-      strock: $mastfoot-color-hover;
+      fill: $action-color;
+      stroke: $action-color;
       
       .iconic-thumbs-up {
         display: inline;
