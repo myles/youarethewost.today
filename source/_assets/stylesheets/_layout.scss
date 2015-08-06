@@ -5,7 +5,7 @@
 .content {
   @include media($medium-screen) {
     @include span-columns(8);
-    @include shift(1);
+    @include shift(2);
   }
   
   @include media($large-screen) {
