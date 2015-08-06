@@ -2,8 +2,8 @@
 layout: post
 ---
 
-1. iTunes
-2. Math
+1. [iTunes](https://twitter.com/mylesb/status/618843307037167616)
+2. [Math](https://twitter.com/mylesb/status/622138225683861504)
 3. PHP
 4. Windows 10
 5. Breaking Bad
