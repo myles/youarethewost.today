@@ -16,6 +16,16 @@ article {
     h1 {
       margin-bottom: 0;
     }
+    
+    a {
+      color: $typl8-heading-color;
+      text-decoration: none;
+      
+      &:hover {
+        color: $action-color;
+        text-decoration: underline;
+      }
+    }
   }
   
   section {

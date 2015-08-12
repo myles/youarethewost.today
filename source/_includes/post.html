@@ -3,7 +3,11 @@
     <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
     
     <header itemprop="headline">
-        <h1>You are the Worst</h1>
+        <h1>
+            <a href="{{ site.baseurl | prepend: site.url }}">
+                You are the Worst
+            </a>
+        </h1>
         <h2>{{ page.date | date: "%-d %B, %Y" }}</h2>
     </header>
     
@@ -16,7 +20,7 @@
             <ul>
                 <li class="page-next">
                     {% if page.next %}
-                    <a href="{{ page.next.url }}" class="active" title="{{ page.next.date | date: "%-d %B, %Y" }}">Next</a>
+                    <a href="{{ page.next.url }}" class="active" title="{{ page.next.date | date: "%-d %B, %Y" }}" rel="next">Next</a>
                     {% else %}
                     <a href="#" class="inactive">Next</a>
                     {% endif %}
@@ -40,7 +44,7 @@
                 
                 <li class="page-prev">
                     {% if page.previous %}
-                    <a href="{{ page.previous.url }}" class="active" title="{{ page.previous.date | date: "%-d %B, %Y" }}">Prev</a>
+                    <a href="{{ page.previous.url }}" class="active" title="{{ page.previous.date | date: "%-d %B, %Y" }}" rel="prev">Prev</a>
                     {% else %}
                     <a href="#" class="inactive">Prev</a>
                     {% endif %}
