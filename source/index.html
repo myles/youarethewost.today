@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<article>
+<article itemscope itemtype="http://schema.org/Article">
+    <meta itemprop="author" content="Myles Braithwaite">
+    <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+    <meta itemprop="headline" content="You are the Worst {{ page.date | date: "%-d %B, %Y" }}">
+    
     <header>
         <h1>You are the Worst</h1>
         <h2>Today</h2>
     </header>
     
     {% for post in site.posts limit:1 %}
-    <section>
+    <section itemprop="articleBody">
         {{ post.content | markdownify }}
     </section>
     
