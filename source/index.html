@@ -18,7 +18,7 @@ layout: default
     </section>
     
     <footer>
-        <p>Published on <a href="{{ post.url }}" title="{{ post.date | date: '%F' }}">{{ post.date | date: "%-d %B, %Y" }}</a>.</p>
+        <p>Published on <a href="{{ post.url }}" title="{{ post.date | date: '%F' }}" itemprop="url">{{ post.date | date: "%-d %B, %Y" }}</a>.</p>
     </footer>
     {% endfor %}
 </article>
