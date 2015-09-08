@@ -8,6 +8,7 @@ module.exports = function (grunt) {
 	]);
 	
 	grunt.registerTask('deploy', [
+		'gitcommit:deploy',
 		'clean',
 		'jekyll:production',
 		's3:build',
