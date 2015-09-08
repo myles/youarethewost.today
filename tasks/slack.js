@@ -3,15 +3,11 @@ module.exports = function (grunt) {
 		options: {
 			webhook: "<%= slack.webhook %>",
 			channel: "<%= slack.channel %>",
-			username: "<%= slack.username %>"
+			username: "<%= slack.username %>",
+			icon_emoji: "<%= slack.icon_emoji %>"
 		},
-		start_deploy: {
-			text: "Starting to deploying YouAreTheWorst.Today",
-			icon_emoji: ":hourglass_flowing_sand:"
-		},
-		finished_deploy: {
-			text: "Deployed YouAreTheWorst.Today!",
-			icon_emoji: ":thumbsup:"
+		deploy: {
+			text: "Just deployed YourAreTheWorst.Today!"
 		}
     };
     

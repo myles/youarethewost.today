@@ -12,7 +12,8 @@ module.exports = function (grunt) {
 		'clean',
 		'jekyll:production',
 		's3:build',
-		'rsync:prod'
+		'rsync:prod',
+		'slack'
 	]);
 	
 	grunt.registerTask('staging', [

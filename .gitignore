@@ -4,3 +4,4 @@
 /vendor/
 /node_modules/
 .aws.json
+.slack.json
