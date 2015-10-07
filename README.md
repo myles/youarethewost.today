@@ -8,13 +8,13 @@ This is the source for my web site, [You're the Worst Today](https://youarethewo
 
 Install the ruby gems:
 
-  bundle install --path=vendor/bundle
+    $ bundle install --path=vendor/bundle
 
 Install the Node.js packages:
 
-  npm install -g grunt-cli
-  npm install
+    $ npm install -g grunt-cli
+    $ npm install
 
 ### Build
 
-  grunt build
+    $ grunt build
