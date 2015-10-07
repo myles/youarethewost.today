@@ -40,3 +40,18 @@ url: "http://127.0.0.1:4000"
 
 # Build settings
 markdown: kramdown
+
+prose:
+  rooturl: 'source/_posts'
+  siteurl: 'https://youaretheworst.today/'
+  relativeLinks: 'https://youaretheworst.today/links.josnp'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "title"
+        field:
+          element: "hidden"
+          value: "theworst"
