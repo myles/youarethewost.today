@@ -13,7 +13,7 @@ module.exports = function (grunt) {
 		'jekyll:production',
 		's3:build',
 		'rsync:prod',
-		'slack'
+		// 'slack'
 	]);
 	
 	grunt.registerTask('staging', [
