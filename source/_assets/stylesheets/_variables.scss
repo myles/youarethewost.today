@@ -1,5 +1,8 @@
 $action-color: #477dca;
 
+$typl8-custom-font: true;
+$typl8-font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+
 /////////////////////////////
 // Neat
 /////////////////////////////
@@ -20,10 +23,10 @@ $pagination-border-color: #dcdcdc;
 $pagination-border: 1px solid $pagination-border-color;
 $pagination-background: lighten($pagination-border-color, 10);
 $pagination-hover-background: lighten($pagination-background, 5);
-$pagination-color: $typl8-copy-color;
+$pagination-color: #444;
 
 /////////////////////////////
 // Mast Head
 /////////////////////////////
-$mastfoot-color: lighten($typl8-copy-color, 10);
-$mastfoot-color-hover: $typl8-copy-color;
+$mastfoot-color: lighten(#444, 10);
+$mastfoot-color-hover: #444;
