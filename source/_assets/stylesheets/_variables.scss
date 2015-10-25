@@ -1,7 +1,9 @@
 $action-color: #477dca;
 
 $typl8-custom-font: true;
-$typl8-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$typl8-font-family-mobile: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$typl8-font-family-desktop: "PT Serif", Georgia, "URW Bookman L", serif;
+$typl8-font-family: $typl8-font-family-mobile;
 
 /////////////////////////////
 // Neat
