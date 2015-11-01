@@ -1,0 +1,9 @@
+---
+layout: post
+---
+
+1. Coming up with titles for presnetations
+2. Written a bio about myself.
+3. [iTunes](https://twitter.com/mylesb/status/618843307037167616)
+4. [MySQL](https://twitter.com/mylesb/status/634857886250835968)
+5. systemd
