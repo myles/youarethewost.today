@@ -1,0 +1,9 @@
+---
+layout: post
+---
+
+1. Rdio going bankrupt
+2. [iTunes](https://twitter.com/mylesb/status/618843307037167616)
+3. [MySQL](https://twitter.com/mylesb/status/634857886250835968)
+4. systemd
+5. YouTube comments
