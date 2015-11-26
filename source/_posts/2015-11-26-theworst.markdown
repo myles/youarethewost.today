@@ -3,7 +3,7 @@ layout: post
 ---
 
 1. Spotify
-2. Not being able to buy a Metropass
+2. TTC Metropass
 3. Avast
 4. systemd
 5. YouTube comments
