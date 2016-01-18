@@ -18,3 +18,5 @@ Install the Node.js packages:
 ### Build
 
     $ grunt build
+
+![Built by Hipsters](http://forthebadge.com/images/badges/built-by-hipsters.svg)
