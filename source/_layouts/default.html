@@ -8,7 +8,7 @@
         <meta name="description" content="{{ site.description }}">
         <meta name="keywords" contnet="{% for keyword in site.keywords %}{{ keyword }}, {% endfor %}">
         
-        <title>{% if page.date %}{{ site.title }} for {{ page.date }}{% else %}{{ site.title }} Today{% endif %}</title>
+        <title>{% if page.date %}{{ site.title }} for {{ page.date | date: "%-d %B, %Y" }}{% else %}{{ site.title }} Today{% endif %}</title>
         
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         
