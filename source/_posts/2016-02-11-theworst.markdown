@@ -1,0 +1,9 @@
+---
+layout: post
+---
+
+1. iCloud asking for my password a hundred times a day
+2. PRESTO Card
+3. People who don't use password managers
+4. systemd
+5. Having to work 15 hour days
