@@ -2,11 +2,11 @@ module.exports = function (grunt) {
 	grunt.registerTask('run', [
 		'jekyll:serve'
 	]);
-	
+
 	grunt.registerTask('build', [
 		'jekyll:build'
 	]);
-	
+
 	grunt.registerTask('deploy', [
 		// 'gitcommit:deploy',
 		'clean',
@@ -15,11 +15,11 @@ module.exports = function (grunt) {
 		'rsync:prod',
 		// 'slack'
 	]);
-	
+
 	grunt.registerTask('staging', [
 		'jekyll:staging'
 	]);
-	
+
 	grunt.registerTask('default', [
 		'run'
 	]);

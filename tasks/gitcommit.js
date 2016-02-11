@@ -1,16 +1,14 @@
 module.exports = function (grunt) {
-    var config = {
+	var config = {
 		deploy: {
 			options: {
 				message: "Deploying : "
 			},
-			files: [
-				{
-					src: ["."]
-				}
-			]
+			files: [{
+				src: ["."]
+			}]
 		}
-    };
-    
-    grunt.config.set('gitcommit', config);
+	};
+
+	grunt.config.set('gitcommit', config);
 };

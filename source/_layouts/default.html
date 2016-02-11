@@ -18,6 +18,8 @@
         
 		<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "https://youaretheworst.today/" }</script>
 		<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "Person", "name": "Myles Braithwaite", "url": "http://mylesbraithwaite.com/", "email": "me@mylesbraithwaite.com", "birthDate": "1986-09-19", "birthPlace": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Richmond Hill", "addressRegion": "Ontario", "addressCountry": "Canada" } }, "homeLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "Ontario", "addressCountry": "Canada" } }, "sameAs": [ "https://youaretheworst.today/", "http://mylesbraithwaite.org/", "http://mylesbraithwaite.com/", "http://mylesb.ca/", "http://myles.red/", "https://github.com/myles", "https://twitter.com/mylesb", "https://instagram.com/myles", "https://plus.google.com/+MylesBraithwaite", "https://www.facebook.com/mylesbraithwaite", "http://myles.coffee/" ], "worksFor": { "@type": "Organization", "name": "Monkey in your Soul", "url": "http://monkeyinyoursoul.com", "email": "myles@monkeyinyoursoul.com" } }</script>
+        
+        <script type="text/javascript" src="{{ site.baseurl }}{% asset_path app.js %}"></script>
     </head>
     <body>
         <div class="page">
@@ -29,7 +31,5 @@
                 {% include footer.html %}
             </div>
         </div>
-        
-        <script type="text/javascript" src="{{ site.baseurl }}{% asset_path app.js %}"></script>
     </body>
 </html>

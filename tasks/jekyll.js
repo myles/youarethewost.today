@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-    var config = {
+	var config = {
 		options: {
 			bundleExec: true,
 			config: '_config.yml'
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 				config: '_config.yml,_config.production.yml'
 			}
 		}
-    };
-    
-    grunt.config.set('jekyll', config);
+	};
+
+	grunt.config.set('jekyll', config);
 };

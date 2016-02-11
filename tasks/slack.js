@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-    var config = {
+	var config = {
 		options: {
 			webhook: "<%= slack.webhook %>",
 			channel: "<%= slack.channel %>",
@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 		deploy: {
 			text: "Just deployed YourAreTheWorst.Today!"
 		}
-    };
-    
-    grunt.config.set('slack', config);
+	};
+
+	grunt.config.set('slack', config);
 };
