@@ -7,9 +7,9 @@ module.exports = function (grunt) {
 		prod: {
 			options: {
 				src: "./build/",
-				dest: "/srv/www/today_youaretheworst_www/html",
-				host: "myles@panda.mylesbraithwaite.com",
-				port: "2222",
+				dest: "/srv/www/youaretheworst.today/www/html",
+				host: "bear",
+				port: "22",
 				delete: true,
 			}
 		}
