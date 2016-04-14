@@ -1,5 +1,5 @@
 {
-  "name": "today_youaretheworst_www",
+  "name": "youaretheworst.today-www",
   "version": "1.0.0",
   "devDependencies": {
     "grunt-aws": "^0.6.2",
@@ -8,6 +8,5 @@
     "grunt-git": "^0.3.7",
     "grunt-jekyll": "^0.4.3",
     "grunt-rsync": "^1.0.1",
-    "grunt-slack-webhook": "0.0.5"
   }
 }
