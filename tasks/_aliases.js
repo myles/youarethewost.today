@@ -18,6 +18,11 @@ module.exports = function (grunt) {
     'jekyll:staging'
   ]);
 
+	grunt.registerTask('new_post', [
+		'copy:new_post',
+		'exec:new_post'
+	]);
+
   grunt.registerTask('default', [
     'run'
   ]);
