@@ -15,6 +15,12 @@ layout: default
     
     <section itemprop="articleBody">
         {{ post.content | markdownify }}
+        
+        {% if post.gif %}
+        <figure class="gif">
+            <img src="{{ site.baseurl }}{% asset_path {{post.gif}} %}">
+        </figure>
+        {% endif %}
     </section>
     
     <footer>

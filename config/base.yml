@@ -12,8 +12,8 @@ destination: build
 assets:
   dirname: assets
   baseurl: /assets/
-  cachebust: soft
-  source:
+  sources:
+    - _gifs
     - _assets/fonts
     - _assets/images
     - _assets/javascripts

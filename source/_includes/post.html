@@ -13,6 +13,12 @@
     
     <section itemprop="articleBody">
         {{ page.content | markdownify }}
+        
+        {% if page.gif %}
+        <figure class="gif">
+            <img src="{{ site.baseurl }}{% asset_path {{page.gif}} %}">
+        </figure>
+        {% endif %}
     </section>
     
     <footer>
