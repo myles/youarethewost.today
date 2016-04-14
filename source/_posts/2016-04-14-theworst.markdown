@@ -1,0 +1,9 @@
+---
+layout: post
+---
+
+1. Open Offices
+2. NPM
+3. People who don't use password managers
+4. Microsoft SQL Server
+5. IIS
