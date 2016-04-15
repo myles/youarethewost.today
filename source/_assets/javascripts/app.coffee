@@ -10,9 +10,9 @@ $(document).ready ->
     GoogleAnalytics.trackEvent 'external', 'click', $(this).attr('href')
   
   if YouAreTheWorstTodayDetails.date
-    date_year = MylesLabPageDetails.date.substring(0, 4)
-    date_month = MylesLabPageDetails.date.substring(0, 7)
-    date_day = MylesLabPageDetails.date.substring(0, 10)
+    date_year = YouAreTheWorstTodayDetails.date.substring(0, 4)
+    date_month = YouAreTheWorstTodayDetails.date.substring(0, 7)
+    date_day = YouAreTheWorstTodayDetails.date.substring(0, 10)
     
     GoogleAnalytics.trackEvent 'year', date_year, 'Year'
   
