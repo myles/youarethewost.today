@@ -1,0 +1,16 @@
+---
+---
+/* TEAM */
+        Chef:         Myles Braithwaite
+        Contact:      me [at] mylesbraithwaite.com
+        Twitter:      @mylesb
+        From:         Toronto, Ontario, Canada
+
+/* SITE */
+        Last Update:  {{ site.time | date: "%-d %B %Y at %r" }}
+        Environment:  {{ site.environment }}
+        Language:     English
+        Doctype:      HTML5
+        IDE:          TextMate, vim, Jekyll, Grunt
+        Graphics:     Photoshop, Illustrator
+        Components:   SASS
