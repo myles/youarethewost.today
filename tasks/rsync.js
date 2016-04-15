@@ -4,7 +4,16 @@ module.exports = function (grunt) {
 			args: ["--verbose"],
 			recursive: true
 		},
-		prod: {
+		staging: {
+			options: {
+				src: "./build/",
+				dest: "/srv/www/youaretheworst.today/draft/html",
+				host: "bear",
+				port: "22",
+				delete: true,
+			}
+		},
+		production: {
 			options: {
 				src: "./build/",
 				dest: "/srv/www/youaretheworst.today/www/html",

@@ -17,6 +17,9 @@
         {% if page.gif %}
         <figure class="gif">
             <img src="{{ site.baseurl }}{% asset_path {{page.gif}} %}">
+            {% if page.gif_caption %}
+            <figcaption>{{ page.gif_caption }}</figcaption>
+            {% endif %}
         </figure>
         {% endif %}
     </section>

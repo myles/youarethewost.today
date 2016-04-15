@@ -4,6 +4,7 @@ gems:
   - bourbon
   - neat
   - jekyll-sitemap
+  - jekyll_pages_api_search
 
 # Structure configuration
 source: source
@@ -20,13 +21,19 @@ assets:
     - _assets/stylesheets
   debug: true
 
+jekyll_pages_api_search:
+  index_fields:
+    body:
+      boost: 10
+
 # Site settings
-title: You're the Worst
+title: "You're the Worst"
 description: Just some things Myles Braithwaite thinks are the worst.
 keywords:
   - Myles Braithwaite
   - Worst
-  - You're the Worst
+  - The Worst
+  - "You're the Worst"
 permalink: /:year-:month-:day/
 
 # Author information

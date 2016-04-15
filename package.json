@@ -1,6 +1,20 @@
 {
   "name": "youaretheworst.today-www",
   "version": "1.0.0",
+  "description": "Source code for the You are the Worst Today website.",
+  "scripts": {
+    "start": "grunt develop",
+    "build": "grunt build",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myles/youarethewost.today.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myles/youarethewost.today/issues"
+  },
+  "homepage": "https://github.com/myles/youarethewost.today#readme",
   "devDependencies": {
     "grunt-aws": "^0.6.2",
     "grunt-contrib-clean": "^1.0.0",

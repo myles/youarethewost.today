@@ -1,0 +1,6 @@
+language: ruby
+before_install:
+- npm install
+before_script:
+- npm install grunt-cli -g
+script: "npm test"
