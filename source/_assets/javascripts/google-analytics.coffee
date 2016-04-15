@@ -1,16 +1,34 @@
-root = exports ? this
-root._gaq = [['_setAccount', 'UA-1642439-38'], ['_trackPageview']]
+# coffeelint: disable=max_line_length
 
-insertGAScript = ->
-  ga = document.createElement 'script'
-  ga.type = 'text/javascript'
-  ga.async = true
+class window.GoogleAnalytics
+  @init: (webPropertyId) ->
+    @_initQueue webPropertyId
+    scriptTag = @_createScriptTag()
+    @_injectScriptTag scriptTag
+    true
 
-  proto = document.location.protocol
-  proto = if (proto is 'https:') then 'https://ssl' else 'http://www'
-  ga.src = "#{proto}.google-analytics.com/ga.js"
-  
-  s = document.getElementsByTagName('script')[0]
-  s.parentNode.insertBefore ga, s
+  @_initQueue: (webPropertyId) ->
+    window._gaq ?= []
+    window._gaq.push ['_setAccount', webPropertyId]
+    window._gaq.push ['_trackPageview']
 
-insertGAScript()
+  @_createScriptTag: ->
+    scriptTag = document.createElement 'script'
+    scriptTag.type = 'text/javascript'
+    scriptTag.async = true
+    protocol = location.protocol
+    scriptTag.src = "#{ protocol }//stats.g.doubleclick.net/dc.js"
+    scriptTag
+
+  @_injectScriptTag: (scriptTag) ->
+    firstScriptTag = document.getElementsByTagName('script')[0]
+    firstScriptTag.parentNode.insertBefore scriptTag, firstScriptTag
+
+  @trackPageView: (url) ->
+    window._gaq.push ['_trackPageview', url]
+
+  @trackEvent: (category, action, label = null, value = null, nonInteraction = null) ->
+    trackedEvent = ['_trackEvent', category, action]
+    for argument in [label, value, nonInteraction]
+      if argument? then trackedEvent.push argument else break
+    window._gaq.push trackedEvent
