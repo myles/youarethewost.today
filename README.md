@@ -1,5 +1,7 @@
 # YouAreTheWorst.Today
 
+[![Build Status](https://travis-ci.org/myles/youarethewost.today.svg?branch=master)](https://travis-ci.org/myles/youarethewost.today)
+
 This is the source for my web site, [You're the Worst Today](https://youaretheworst.today/).
 
 ## Develop
