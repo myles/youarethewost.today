@@ -17,7 +17,7 @@ layout: default
         
         {% if post.gif %}
         <figure class="gif">
-            <img src="{{ site.baseurl }}{% asset_path {{post.gif}} %}">
+            <img src="{{ site.baseurl }}{% asset_path {{post.gif}} %}"{% if post.gif_caption %} alt="{{ post.gif_caption }}"{% endif %}>
             {% if post.gif_caption %}
             <figcaption>{{ post.gif_caption }}</figcaption>
             {% endif %}

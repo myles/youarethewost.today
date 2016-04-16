@@ -1,4 +1,7 @@
 ---
+layout: null
+sitemap: false
+permalink: humans.txt
 ---
 /* TEAM */
         Chef:         Myles Braithwaite

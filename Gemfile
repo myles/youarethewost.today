@@ -15,3 +15,6 @@ gem 'neat'
 gem 'sass'
 gem 'uglifier'
 gem 'coffee-script'
+
+gem 'nokogiri'
+gem 'fastimage'
