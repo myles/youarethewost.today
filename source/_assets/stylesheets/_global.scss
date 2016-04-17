@@ -41,6 +41,10 @@ article {
   }
   
   figure {
+      img {
+          width: 100%;
+      }
+      
       figcaption {
           color: #4d4d4d;
       }
