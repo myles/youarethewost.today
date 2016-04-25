@@ -6,7 +6,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
 		'clean',
-    'jekyll:production'
+    'jekyll:production',
+		'favicons'
   ]);
 
 	grunt.registerTask('deploy', [

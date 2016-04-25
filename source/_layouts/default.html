@@ -22,6 +22,18 @@
         {% if page.path contains '_posts' %}
         <link rel="amphtml" href="{{ page.url | append:'amp/' | prepend: site.baseurl | prepend: site.url }}">
         {% endif %}
+        
+        {% if page.path contains '_posts' %}
+        <meta name="twitter:card" content="{% if page.gif %}summary_large_image{% else %}summary{% endif %}">
+        <meta name="twitter:site" content="@thewoooooooorst">
+        <meta name="twitter:creator" content="@MylesB">
+        <meta name="twitter:title" content="{{ site.title }}">
+        <meta name="twitter:description" content="{% if page.gif_caption %}{{ page.gif_caption }}{% else %}{{ site.description }}{% endif %}">
+        {% if page.gif %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% asset_path {{page.gif}} %}">{% endif %}
+        {% if page.gif_caption %}<meta name="twitter:image:alt" content="{{ page.gif_caption }}">{% endif %}
+        {% endif %}
+        
+        {% include favicons.html %}
     </head>
     <body>
         <div class="page">
