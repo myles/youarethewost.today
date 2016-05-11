@@ -1,0 +1,11 @@
+---
+layout: post
+gif: worlds-biggest-mistake.gif
+gif_caption: "World's biggest mistake."
+---
+
+1. Open Offices
+2. People who don't use password managers
+3. Microsoft SQL Server
+4. IIS
+5. Node.js
