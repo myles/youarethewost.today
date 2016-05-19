@@ -1,0 +1,11 @@
+---
+layout: post
+gif: i-hate-everyone.gif
+gif_caption: "I Hate Everyone"
+---
+
+1. Open Offices
+2. People who don't use password managers
+3. Microsoft SQL Server
+4. IIS
+5. Go
