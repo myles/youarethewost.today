@@ -5,29 +5,29 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-		'clean',
+    'clean',
     'jekyll:production',
-		'favicons'
+    'favicons'
   ]);
 
-	grunt.registerTask('deploy', [
-		'build',
-		'rsync:staging'
-	]);
+  grunt.registerTask('deploy', [
+    'build',
+    'rsync:staging'
+  ]);
 
   grunt.registerTask('deploy:production', [
-		'build',
+    'build',
     'rsync:production'
   ]);
 
-	grunt.registerTask('test', [
-		'jekyll:build'
-	]);
+  grunt.registerTask('test', [
+    'jekyll:build'
+  ]);
 
-	grunt.registerTask('new_post', [
-		'copy:new_post',
-		'exec:new_post'
-	]);
+  grunt.registerTask('new_post', [
+    'copy:new_post',
+    'exec:new_post'
+  ]);
 
   grunt.registerTask('default', ['develop']);
 };
