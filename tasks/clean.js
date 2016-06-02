@@ -1,7 +1,10 @@
-module.exports = function (grunt) {
-	var config = {
-		all: ['./build/']
-	};
+'use strict';
 
-	grunt.config.set('clean', config);
+module.exports = function (grunt) {
+    var config = {
+        build: ['./build/'],
+        favicon_template: ['./source/_includes/favicons.html']
+    };
+
+    grunt.config.set('clean', config);
 };

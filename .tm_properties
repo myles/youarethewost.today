@@ -1,2 +1,2 @@
-include = "{$include,.aws.json,.travis.yml}"
-exclude = "{$exclude,build,node_modules,vendor,Gemfile.lock,*.gpg}"
+include = "{$include,.travis.yml}"
+exclude = "{$exclude,build,node_modules,vendor,Gemfile.lock}"
