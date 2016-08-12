@@ -2,7 +2,6 @@ language: ruby
 rvm:
 - 2.2
 before_install:
-- npm install
-before_script:
 - npm install grunt-cli -g
+- npm install
 script: "npm test"
