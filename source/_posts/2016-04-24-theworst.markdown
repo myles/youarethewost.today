@@ -1,7 +1,7 @@
 ---
 layout: post
 gif: worlds-biggest-mistake.gif
-gif_caption: "World's biggest mistake."
+gif_caption: World's biggest mistake.
 ---
 
 1. Having to work on a Saturday night.

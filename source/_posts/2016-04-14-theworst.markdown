@@ -1,7 +1,7 @@
 ---
 layout: post
 gif: you-are-the-fucking-worst.gif
-gif_caption: "You're the fuckin' worst."
+gif_caption: You're the fuckin' worst.
 ---
 
 1. Open Offices
