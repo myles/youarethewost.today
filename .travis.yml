@@ -4,4 +4,5 @@ rvm:
 before_install:
 - npm install grunt-cli -g
 - npm install
-script: "npm test"
+script:
+- npm test
